@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Gym</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        height: 1800px;
+        color: white;
+        background: url('gym8.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .left {
+        display: inline-block;
+        color: white;
+        position: absolute;
+        left: 33px;
+        top: 30px;
+        filter: invert(100%);
+    }
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 40px auto;
+        padding: 0px 0px;
+        background-color: black;
+        border-radius: 20px;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 48px;
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 24px 10px;
+        font-size: 24px;
+    }
+
+    .navbar li a:hover {
+        color: rgb(108, 133, 133);
+        text-decoration: underline;
+    }
+
+    .leftDiv {
+        padding-left: 0px;
+        padding-top: 1px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        color: white;
+        filter: invert(100%);
+    }
+
+    .btn {
+        color: rgb(255, 255, 255);
+        background-color: black;
+        padding: 10px 7px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        color: rgb(108, 133, 133);
+    }
+
+    .container {
+        border: 4px solid black;
+        border-radius: 30px;
+        margin: 40px 430px;
+        width: 35%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 40px;
+        padding-bottom: 150px;
+        margin-top: 150px;
+    }
+
+    #heading {
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .groupform {
+        color: white;
+        margin-top: 70px;
+        text-align: center;
+    }
+
+    .groupform input {
+        border-radius: 4px;
+        color: white;
+        background-color: black;
+        padding: 8px 6px;
+        width: 45%;
+    }
+
+    .container button {
+        color: white;
+        margin-left: 80px;
+        margin-right: 35px;
+        margin-top: 70px;
+        width: 65%;
+        padding-right: 27px;
+    }
+
+    .box {
+        margin-left: 75px;
+        margin-top: 0px;
+        margin-bottom: 40px;
+        height: 50%;
+        padding: 35px 35px 35px 35px;
+        width: 20%;
+        display: inline-block;
+        background-color: rgb(0, 0, 0);
+        border: 2px solid black;
+        border-end-end-radius:  15px;
+        border-end-start-radius: 15px;
+        flex-direction: column;   
+    }
+
+    .box img{
+        margin-left: 75px;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+
+    .heading2{
+        border: 4px solid black;
+        margin-top: 120px;
+        margin-left: 75px;
+        margin-right: 85px;
+        margin-bottom: 0px;
+        border-radius: 2px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        background-color: black;
+        text-align: center;
+        font-size: 23px;
+    }
+
+</style>
+
+<body>
+    <header class="header">
+
+        <div class="left">
+            <img src="logo.jpg" width="80px" height="60px" alt="">
+            <div class="leftDiv">
+                GOLD GYM
+            </div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"> Home </a></li>
+                <li><a href="Aboutus.html" > About us</a></li>
+                <li><a href="Gallery.html"> Gallery </a></li>
+                <li><a href="#"> Physical Trainers </a></li>
+                <li><a href="#"> Contact us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn"> Email us</button>
+        </div>
+
+        <div class="container">
+            <h1 id="heading">Join The Best Gym Of Tonk</h1>
+            <form action="backend.php">
+                <div class="groupform">
+                    <input type="text" name="myName" placeholder="Enter Your Name">
+                </div>
+
+                <div class="groupform">
+                    <input type="text" name="myName" placeholder="Enter Your Age">
+                </div>
+
+                <div class="groupform">
+                    <input type="text" name="myName" placeholder="Enter Your Gender">
+                </div>
+
+                <div class="groupform">
+                    <input type="text" name="myName" placeholder="Enter Your Location">
+                </div>
+                
+                <div class="groupform">
+                    <input type="number" name="myName" placeholder="Enter Your Mobile No.">
+                </div>
+
+                <button class="btn">Submit</button>
+
+            </form>
+        </div>
+         
+         <div class="heading2">
+             <h1> Owners &nbsp; Of &nbsp; The &nbsp; Gold &nbsp; Gym </h1>
+         </div>
+
+        <div class="box" id="box1" >
+            
+            <img src="Expert1.jpg" height="100px" width="100" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium tempora veniam nesciunt, commodi fugiat illo provident itaque ducimus iste nemo consectetur eveniet accusantium mollitia minima veritatis, a consequatur voluptatum eligendi omnis aliquam vitae ut eos ipsam quod. Sequi quibusdam harum iusto odio nam commodi eius fugiat maxime minus odit beatae, corporis tempore tempora doloribus, ipsum voluptatibus eaque nisi. Blanditiis, tempora.</p></div>
+        <div class="box" id="box2">
+            <img src="Expert2.jpg" height="100px" width="100" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam suscipit quo laudantium mollitia repellendus cumque dignissimos culpa natus fugiat. Accusamus voluptatum dignissimos ab est numquam sequi iure officiis incidunt perspiciatis cupiditate neque maiores voluptatem, expedita corporis illum quidem assumenda porro distinctio? Rem sed aliquam repellendus corrupti veritatis atque unde, officiis, a quaerat ratione, eos distinctio doloremque rerum odio nostrum dolores!</p></div>
+        <div class="box" id="box3">
+            <img src="Expert3.jpg" height="100px" width="100" alt="">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique distinctio, consequuntur, optio quae repellat id numquam quidem iure perspiciatis blanditiis labore deleniti corporis. Adipisci excepturi deserunt quos tenetur suscipit voluptates aliquam illo explicabo eligendi ab laboriosam consequatur reprehenderit nisi perferendis beatae, commodi maiores rem eaque nobis placeat ut eveniet. Reiciendis qui doloribus, ea aliquid corrupti possimus iure dignissimos voluptatum cum.</p> </div>
+    </header>
+</body>
+</html>

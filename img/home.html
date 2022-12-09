@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home </title>
+</head>
+<style>
+    body {
+        margin-bottom: 530px;
+        padding: 0px;
+        height: 1800px;
+        color: white;
+        background: url('gym4.jpg');
+        background-size: 500px 710px;
+        background-color: rgb(0, 0, 0);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 125px;
+        top: 20px;
+        filter: invert(100%);
+    }
+
+    .mid {
+        display: block;
+        width: 60%;
+        margin: 55px 342px;
+        padding: 0px 0px;
+        background-color: black;
+        border-radius: 21px;
+    }
+
+    .right {
+        position: absolute;
+        right: 130px;
+        top: 65px;
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 35px 10px;
+        font-size: 22px;
+        font-style: italic;
+    }
+
+    .navbar li a:hover {
+        color: rgb(108, 133, 133);
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active1 {
+        color: rgb(108, 133, 133);
+    }
+
+    .leftDiv {
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        color: white;
+        filter: invert(100%);
+    }
+
+    .btn {
+        color: rgb(255, 255, 255);
+        background-color: black;
+        padding: 7px 7px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .btn a:hover {
+        color: rgb(108, 133, 133);
+        z-index: 7;
+    }
+
+    .container {
+        display: inline-block;
+        border-radius: 10px;
+        margin: 10px 170px;
+        width: 35%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 40px;
+        padding-bottom: 90px;
+        margin-top: 30px;
+        text-align: left;
+    }
+
+    #heading {
+        display: inline-block;
+        color: rgb(164, 199, 199);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 23px;
+        font-size: 38px;
+    }
+
+    h1 {
+        display: inline-block;
+        text-align: start;
+    }
+
+    .groupform {
+        color: rgb(0, 0, 0);
+        margin-top: 70px;
+        margin-left: 90px;
+        text-align: left;
+    }
+
+    .groupform input {
+        border-radius: 4px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(253, 253, 253);
+        padding: 8px 14px;
+        width: 70%;
+        text-align: left;
+    }
+
+    .container button {
+        color: rgb(255, 250, 250);
+        margin-left: 55px;
+        margin-right: 30px;
+        margin-top: 100px;
+        width: 80%;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .box {
+        margin-left: 75px;
+        margin-top: 0px;
+        color: rgb(108, 133, 133);
+        margin-bottom: 40px;
+        height: 50%;
+        padding: 35px 35px 35px 35px;
+        width: 20%;
+        display: inline-block;
+        background-color: rgb(0, 0, 0);
+        border: 2px solid black;
+        border-end-end-radius: 15px;
+        border-end-start-radius: 15px;
+        flex-direction: column;
+    }
+
+    .box img {
+        margin-left: 75px;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+
+    .heading2 {
+        border: 4px solid black;
+        color: rgb(164, 199, 199);
+        margin-top: 30px;
+        margin-left: 40px;
+        margin-right: 85px;
+        margin-bottom: 20px;
+        border-radius: 2px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        background-color: black;
+        text-align: center;
+        font-size: 23px;
+    }
+
+    .imgcenter {
+        margin-left: 115px;
+        margin-right: 100px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+
+    .imgcenter1 {
+        margin-left: 800px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .imgcenter1 img {
+        border-start-end-radius: 4px;
+        border-start-start-radius: 4px;
+        border-end-end-radius: 4px;
+        border-end-start-radius: 4px;
+    }
+
+    footer {
+        display: block;
+        text-align: center;
+        padding-bottom: 30px;
+        font-family: monospace;
+    }
+
+    .links {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .links div {
+        display: inline-block;
+    }
+
+    .links div a {
+        color: rgb(58, 40, 146);
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .links div a:hover {
+        color: rgb(186, 175, 245);
+    }
+
+    .but {
+        display: inline-block;
+    }
+
+    .but button {
+        background-color: black;
+        padding: 7px 7px;
+        padding-left: 17px;
+        padding-right: 17px;
+        margin-left: 1260px;
+        margin-top: 0px;
+        border-radius: 4px;
+    }
+
+    .but button a:hover {
+        color: rgb(108, 133, 133);
+    }
+
+</style>
+
+<body>
+    <header class="header">
+
+
+        <div class="but">
+            <button><a href="firstpagegym.html"><i>Back</i></a></button>
+        </div>
+
+        <div class="left">
+            <img src="logo.jpg" width="80px" height="60px" alt="error loading">
+            <div class="leftDiv">
+                <i>GOLD GYM</i>
+            </div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active1"> Home </a></li>
+                <li><a href="Aboutus.html" target="_parent"> About us</a></li>
+                <li><a href="Gallery.html" target="_parent"> Gallery </a></li>
+                <li><a href="physicaltrainer.html" " > Physical Trainers  </a></li>
+                <li><a href=" contactus.html"> Contact us</a></li>
+            </ul>
+        </div>
+
+        <div class="imgcenter">
+            <img src="gym1.jpg" width="1100px" height="600px" alt="error loading">
+        </div>
+
+        <div class="right">
+            <button class="btn"> <a href="tel:917014509617"> <i> Call us</i></a></button>
+            <button class="btn"> <a href="hammadkhan4513@gmail.com"> <i> Email us</i></a></button>
+        </div>
+
+        <div class="container">
+            <h1 id="heading"> <i> Join The Best Gym Of Tonk</i></h1>
+            <form action="backend.php">
+                <div class="groupform">
+                    <input type="text" name="myName" placeholder="Enter Your Name">
+                </div>
+
+                <div class="groupform">
+                    <input type="text" name="myName" placeholder="Enter Your Age">
+                </div>
+
+                <div class="groupform">
+                    <input type="text" name="myName" placeholder="Enter Your Gender">
+                </div>
+
+                <div class="groupform">
+                    <input type="text" name="myName" placeholder="Enter Your Location">
+                </div>
+
+                <div class="groupform">
+                    <input type="number" name="myName" placeholder="Enter Your Mobile No.">
+                </div>
+
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+        <hr>
+
+        <div class="heading2">
+            <h1> <i>Owners &nbsp; Of &nbsp; The &nbsp; Gold &nbsp; Gym</i> </h1>
+        </div>
+
+        <div class="box" id="box1">
+
+            <img src="Expert1.jpg" height="100px" width="100" alt="">
+            <p> <strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium tempora veniam nesciunt,
+                    commodi fugiat illo provident itaque ducimus iste nemo consectetur eveniet accusantium mollitia
+                    minima veritatis, a consequatur voluptatum eligendi omnis aliquam vitae ut eos ipsam quod. Sequi
+                    quibusdam harum iusto odio nam commodi eius fugiat maxime minus odit beatae, corporis tempore
+                    tempora doloribus, ipsum voluptatibus eaque nisi. Blanditiis, tempora.</strong> </p>
+        </div>
+        <div class="box" id="box2">
+            <img src="Expert2.jpg" height="100px" width="100" alt="">
+            <p> <strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam suscipit quo laudantium
+                    mollitia repellendus cumque dignissimos culpa natus fugiat. Accusamus voluptatum dignissimos ab est
+                    numquam sequi iure officiis incidunt perspiciatis cupiditate neque maiores voluptatem, expedita
+                    corporis illum quidem assumenda porro distinctio? Rem sed aliquam repellendus corrupti veritatis
+                    atque unde, officiis, a quaerat ratione, eos distinctio doloremque rerum odio nostrum
+                    dolores!</strong> </p>
+        </div>
+        <div class="box" id="box3">
+            <img src="Expert3.jpg" height="100px" width="100" alt="">
+            <p> <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique distinctio, consequuntur,
+                    optio quae repellat id numquam quidem iure perspiciatis blanditiis labore deleniti corporis.
+                    Adipisci excepturi deserunt quos tenetur suscipit voluptates aliquam illo explicabo eligendi ab
+                    laboriosam consequatur reprehenderit nisi perferendis beatae, commodi maiores rem eaque nobis
+                    placeat ut eveniet. Reiciendis qui doloribus, ea aliquid corrupti possimus iure dignissimos
+                    voluptatum cum.</strong> </p>
+        </div>
+        <br>
+        <br>
+
+        <footer>
+            <div>
+                copyright @beinghammad
+            </div>
+
+            <div class="links">
+                <div> <a href="http://www.Facebook.com">Facebook &nbsp;|</a> </div>
+                <div> <a href="http://www.Twitter.com">Twitter &nbsp;|</a> </div>
+                <div> <a href="http://www.Instagram.com">Instagram &nbsp;|</a> </div>
+                <div> <a href="http://www.Linkedin.com">Linkedin </a> </div>
+            </div>
+        </footer>
+    </header>
+</body>
+
+</html>
